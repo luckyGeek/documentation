@@ -46,6 +46,17 @@ Dokumentation
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pictures/lg.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
