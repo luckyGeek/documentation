@@ -56,8 +56,14 @@ project: luckyGeek
 \end_layout
 
 \begin_layout Plain Layout
-autor: Christian Voigt
+author: Christian Voigt
+\end_layout
+
+\begin_layout Plain Layout
 $LastChangedDate$
+\end_layout
+
+\begin_layout Plain Layout
 $Rev$
 \end_layout
 
