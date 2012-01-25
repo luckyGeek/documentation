@@ -1,42 +1,60 @@
-#LyX 1.6.8 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass article
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
 \use_hyperref false
 \papersize default
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -91,17 +109,170 @@ $Rev$
 \end_layout
 
 \begin_layout Section*
-Usage
+Installation
 \end_layout
 
 \begin_layout Enumerate
-Command-Line.
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Hint: Use with Cronjob!
+Unzip / tar the package into a folder.
 \end_layout
+
+\begin_layout Enumerate
+Unix: Check if 
+\emph on
+run.sh
+\emph default
+ is executable
+\end_layout
+
+\begin_layout Enumerate
+Optional: Install imagemagic (convert must be on the path - check by just
+ typing 
+\emph on
+convert --version
+\emph default
+ into shell)
+\end_layout
+
+\begin_layout Enumerate
+Setup Cron/Startup/SceduledTast to execute the 
+\emph on
+run.sh
+\end_layout
+
+\begin_layout Section*
+Configuration
+\end_layout
+
+\begin_layout Standard
+You need not to configure anything, standard does work fine, but you can
+ ;).
+\end_layout
+
+\begin_layout Subsection*
+Printing
+\end_layout
+
+\begin_layout Standard
+If you would like to print out the commic automaticly, you could set it
+ to 
+\emph on
+true.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+file.last.print.silent = true
+\end_layout
+
+\begin_layout Subsection*
+Convert-Engine
+\end_layout
+
+\begin_layout Standard
+3 Engines are implemented to convert the picture: 
+\emph on
+imagemagick
+\emph default
+, 
+\emph on
+jmagick
+\emph default
+ and 
+\emph on
+pdfbox
+\emph default
+.
+ Default is 
+\emph on
+pdfbox
+\emph default
+, it runs just inside 
+\noun on
+Java.
+ 
+\noun default
+If you have 
+\noun on
+ImageMagick
+\noun default
+ intalled on your system, you may want to use it for the convert (better
+ quality).
+ 
+\noun on
+JMagick
+\noun default
+ does only run properly on 32bit 
+\emph on
+\noun on
+Windows
+\emph default
+\noun default
+ machienes.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+type.conversion = imagemagick
+\end_layout
+
+\begin_layout Section*
+Support
+\end_layout
+
+\begin_layout Standard
+Feel free to ask your questions!
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "luckygeek@verpeil.de"
+target "luckygeek@verpeil.de"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "https://sourceforge.net/p/luckygeek/discussion/"
+target "https://sourceforge.net/p/luckygeek/discussion/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Feedback
+\end_layout
+
+\begin_layout Standard
+We yould be happy, if you could give us feedback:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "https://sourceforge.net/projects/luckygeek/reviews/"
+target "https://sourceforge.net/projects/luckygeek/reviews/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "luckygeek@verpeil.de"
+target "luckygeek@verpeil.de"
+type "mailto:"
 
 \end_inset
 
