@@ -113,6 +113,18 @@ Installation
 \end_layout
 
 \begin_layout Enumerate
+Be shure you have installaled 
+\noun on
+Java
+\noun default
+ >=1.6 (check with 
+\emph on
+java -version
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
 Unzip / tar the package into a folder.
 \end_layout
 
