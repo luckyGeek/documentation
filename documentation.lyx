@@ -161,6 +161,18 @@ You need not to configure anything, standard does work fine, but you can
 \end_layout
 
 \begin_layout Subsection*
+Config Files
+\end_layout
+
+\begin_layout Standard
+There are several possibilities for config files.
+ In portable version, all configs are located in 
+\emph on
+conf/.
+ If this folder does not exist, system folders or home folder is checked.
+\end_layout
+
+\begin_layout Subsection*
 Printing
 \end_layout
 
@@ -214,13 +226,14 @@ ImageMagick
 \noun on
 JMagick
 \noun default
- does only run properly on 32bit 
+ is depricated, because it does only run properly on 32bit 
 \emph on
 \noun on
 Windows
 \emph default
 \noun default
  machienes.
+ This conversion engine will be removed in 0.8xx version.
 \end_layout
 
 \begin_layout Standard
